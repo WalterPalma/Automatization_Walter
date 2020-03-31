@@ -8,5 +8,6 @@
  3) É necessário ter o Java instalado na máquina (A partir da versão 7)
  4) Feito todas as opções acima, importe no Eclipe e execute a classe "Start Ambient"
  5) Ou também pode executar o arquivo .jar o mesmo diretório das classes(Automatization_Walter\Executável).
+ 6) É necessário ter toda livraria do selenium instalada. (Existe uma pasta no repositório com o nome "Selenium" com os arquivos da biblioteca selenium.
  
  -- Walter Fagundes Palma - wfpalma@outlook.com
