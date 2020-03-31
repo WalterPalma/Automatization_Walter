@@ -202,8 +202,10 @@ public class StartAmbient {
 
 			if (isCompleted == true) {
 				JOptionPane.showMessageDialog(null, "Compra realizada com sucesso ! :)");
+				System.exit(0);
 			} else {
 				JOptionPane.showMessageDialog(null, "Não foi possível realizar a compra! :(");
+				System.exit(0);
 			}
 		} catch (Exception e) {
 			JOptionPane.showMessageDialog(null,
