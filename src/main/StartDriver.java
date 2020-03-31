@@ -25,4 +25,16 @@ public class StartDriver {
 		return driver;
 	}
 
+	public WebDriver chromeAccess() {
+
+			System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
+			/* Instância do Driver */
+			driver = new ChromeDriver();
+			/* Acessar a Pagina */
+			driver.get("http://automationpractice.com/");/* Aqui acesará o host do ambiente */
+			//driver.manage().window().maximize();
+			
+		return driver;
+	}
+
 }

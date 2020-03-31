@@ -18,7 +18,8 @@ public class StartAmbient {
 
 		// Inicia o Chrome e Acessa o ambiente
 		StartDriver start = new StartDriver();
-		WebDriver driver = start.firefoxAccess();
+		WebDriver driver = start.firefoxAccess(); //Acessar com o Firefox
+		//WebDriver driver = start.chromeAccess(); //Acessar com o Chrome
 
 		// -----------------Seleção de Produto ------------------------
 		WebElement element;
