@@ -211,7 +211,8 @@ public class StartAmbient {
 			JOptionPane.showMessageDialog(null,
 					"Ops, parece que ocorreu um erro ao tentar realizar o teste, verifique os arquivos instalados");
 		}
-
+		
+		System.exit(0);
 	}
 
 }
