@@ -18,8 +18,8 @@ public class StartAmbient {
 
 		// Inicia o Chrome e Acessa o ambiente
 		StartDriver start = new StartDriver();
-		WebDriver driver = start.firefoxAccess(); //Acessar com o Firefox
-		//WebDriver driver = start.chromeAccess(); //Acessar com o Chrome
+		WebDriver driver = start.firefoxAccess(); // Acessar com o Firefox
+		// WebDriver driver = start.chromeAccess(); //Acessar com o Chrome
 
 		// -----------------Seleção de Produto ------------------------
 		WebElement element;
@@ -195,9 +195,12 @@ public class StartAmbient {
 					.elementToBeClickable(By.xpath("/html/body/div/div[2]/div/div[3]/div/div/p/strong")));
 
 			element = driver.findElement(By.xpath("/html/body/div/div[2]/div/div[3]/div/div/p/strong"));
+			
+			String aux = element.getText();
+			driver.close();
 
 			boolean isCompleted = false;
-			if (element.getText().equals("Your order on My Store is complete."))
+			if (aux.equals("Your order on My Store is complete."))
 				isCompleted = true;
 
 			if (isCompleted == true) {
@@ -207,12 +210,15 @@ public class StartAmbient {
 				JOptionPane.showMessageDialog(null, "Não foi possível realizar a compra! :(");
 				System.exit(0);
 			}
+
+			
+			System.exit(0);
+
 		} catch (Exception e) {
 			JOptionPane.showMessageDialog(null,
 					"Ops, parece que ocorreu um erro ao tentar realizar o teste, verifique os arquivos instalados");
 		}
-		
-		System.exit(0);
+
 	}
 
 }
